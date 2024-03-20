@@ -1,0 +1,224 @@
+body {
+    background: #F3F5FC;
+}
+
+.logo {
+    padding-top: 10px;
+    margin-left: 10px;
+    width: 10%;
+}
+
+.contenedor-texto {
+    font-family: "Inter Tight", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 48px;
+    text-align: left;
+    color: #0A3871;
+    background: transparent;
+    width: 577px;
+    height: 48px;
+    position: absolute;
+    top: 168px;
+    left: 240px;
+    border: none;
+
+    /* Estilo del placeholder */
+    ::-webkit-input-placeholder {
+        color: #0A3871;
+        font-family: "Inter Tight", sans-serif;
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 48px;
+    }
+
+    :-moz-placeholder {
+        color: #0A3871;
+        font-family: "Inter Tight", sans-serif;
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 48px;
+    }
+
+    ::-moz-placeholder-color {
+        color: #0A3871;
+    }
+
+    ::-ms-input-placeholder {
+        color: #0A3871;
+    }
+}
+
+.contenedor-texto:focus {
+    border: none;
+    outline: none;
+}
+
+.sin-borde {
+    border: none;
+}
+
+/* Estilo del botón */
+.encriptar {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+    color: #FFFFFF;
+    text-align: center;
+    background: #0A3871;
+    width: 328px;
+    height: 67px;
+    padding: 24px;
+    border-radius: 24px;
+    border: none;
+    cursor: pointer;
+    opacity: 1;
+    transition: background-color 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo del botón al pasar el cursor sobre él */
+.encriptar:hover {
+    background: #0C4F99;
+    /* Cambiar a un tono más oscuro de azul al pasar el cursor */
+}
+
+/* Estilo del botón al hacer clic */
+.encriptar:active {
+    transform: translateY(1px);
+    /* Simular un clic al mover ligeramente el botón hacia abajo */
+}
+/* Estilo del contenedor del botón */
+.contenedor-boton {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    width: 680px; /* Ancho fijo según tus especificaciones */
+    height: 67px; /* Alto de abrazo según tus especificaciones */
+    position: absolute;
+    top: 790px; /* Posicionamiento en la parte superior según tus especificaciones */
+    left: 240px; /* Posicionamiento en la izquierda según tus especificaciones */
+    gap: 24px; /* Espacio entre elementos hijo según tus especificaciones */
+    opacity: 1; /* Cambiado a 1 para que sea visible según tus especificaciones */
+  }
+  
+  .desencriptar{
+
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+    color: #0A3871;
+    text-align: center;
+    background: #E9ECF8;
+    width: 328px;
+    height: 67px;
+    padding: 24px;
+    border-radius: 24px;
+    border: none;
+    cursor: pointer;
+    opacity: 1;
+    transition: background-color 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #0A3871
+}
+
+/* TEXTO */
+.aviso{
+    width: 229px;
+    height: 18px;
+    top: 750px;
+    left: 250px;
+    gap: 8px;
+    opacity: 1; /* Cambiado a 1 para que sea visible */
+    font-size: 14px;
+    font-family: "Inter", sans-serif;
+    color: #667284;
+    text-align: left;
+    position: absolute;
+    white-space: nowrap;
+  }
+  
+/* rectangulo*/
+.rectangulo {
+    max-width: 100%;
+    width: 400px;
+    height: 850px;
+    top: 40px;
+    margin: 0 auto;
+    left: 1200px;
+    gap: 0px; /* La propiedad gap no tiene efecto en un solo elemento */
+    border-radius: 32px 32px 32px 32px;
+    opacity: 1; /* Cambia esto a 1 para que el rectángulo sea visible */
+    background: #FFFFFF;
+    box-shadow: 0px 24px 32px -8px #00000014;
+    position: absolute; /* Para controlar el posicionamiento */
+  }
+  .imagen-rectangulo {
+    width: 336px;
+    height: 304px;
+    position: absolute;
+    top: 190px; /* Ajusta este valor para centrar verticalmente la imagen dentro del rectángulo */
+    left: 45px; /* Ajusta este valor para centrar horizontalmente la imagen dentro del rectángulo */
+    opacity: 1; /* Ajusta la opacidad según sea necesario */
+}
+
+.texto-rectangulo {
+    width: 336px;
+    height: 58px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    color: #343A40;
+    position: absolute;
+    top: calc(60% + 5px); /* Establece la posición 5px debajo de la parte inferior de la imagen */
+    left: 50%; /* Centra horizontalmente el texto */
+    transform: translateX(-50%); /* Centra horizontalmente el texto */
+    margin: 0;
+    padding: 0;
+}
+.texto-rectangulo-secundario {
+    width: 336px;
+    height: 48px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #495057;
+    position: absolute;
+    top: calc(67% + 10px); /* Ajusta la posición 10px debajo del texto anterior */
+    left: 50%; /* Centra horizontalmente el texto */
+    transform: translateX(-50%); /* Centra horizontalmente el texto */
+    margin: 0;
+    padding: 0;
+}
+
+.texto-encriptado {
+    width: 336px;
+    height: 700px; /* Ajusta la altura del texto para que se ajuste dentro del rectángulo */
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    color: #495057;
+    position: absolute;
+    left: 50%; /* Centra horizontalmente el texto */
+    top: 120px; /* Ajusta la posición vertical del texto para que esté dentro del rectángulo */
+    transform: translateX(-50%); /* Centra horizontalmente el texto */
+    margin: 0;
+    padding: 0;
+}
+
+
